@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="TradeNerva is a safety-first autonomous trading control center for supervising strategy, risk, orders, and reporting."
+    />
+    <title>TradeNerva | Autonomous Trading Control Center</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="TradeNerva home">
+        <span class="brand-mark">TN</span>
+        <span>TradeNerva</span>
+      </a>
+      <nav aria-label="Primary">
+        <a href="#capabilities">Capabilities</a>
+        <a href="#screens">Product</a>
+        <a href="#access">Access</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <canvas id="market-canvas" aria-hidden="true"></canvas>
+        <div class="hero-content">
+          <p class="eyebrow">Safety-first autonomous trading</p>
+          <h1 id="hero-title">TradeNerva</h1>
+          <p class="hero-copy">
+            An AI-powered autonomous trading platform for short-term strategies, built around
+            disciplined risk controls and automated order execution to maximize your gain.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#access">Request access</a>
+            <a class="button secondary" href="#screens">View product scope</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="capabilities" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Built for controlled autonomy</p>
+          <h2>Everything important stays observable.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span>01</span>
+            <h3>Risk Gates</h3>
+            <p>Daily loss, max notional, trade-count, kill-switch, market freshness, and symbol controls sit before order placement.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>My Stocks</h3>
+            <p>Manage the tradable universe and per-symbol execution limits without burying controls inside generic settings.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Risk Profile</h3>
+            <p>Track market posture, symbol readiness, price ranges, and volatility so pending data is visible instead of mysterious.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Trade Performance</h3>
+            <p>Review completed buy/sell activity by stock, filter buy and sale dates separately, and export CSV reports.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="screens" class="product-section">
+        <div class="product-copy">
+          <p class="eyebrow">Product snapshot</p>
+          <h2>A cockpit for strategy, orders, and reporting.</h2>
+          <p>
+            The internal app currently includes Dashboard, My Stocks, Risk Profile, Orders,
+            Report, Audit, Settings, and Help pages. It is backed by a FastAPI service, mock
+            broker adapter, documented contracts, and automated tests.
+          </p>
+        </div>
+        <div class="product-frame" aria-label="TradeNerva interface preview">
+          <div class="preview-topbar">
+            <span></span><span></span><span></span>
+          </div>
+          <div class="preview-grid">
+            <div class="preview-card tall">
+              <strong>Agent</strong>
+              <span class="status-pill">Running</span>
+              <p>Controls, status, and emergency stop are always visible.</p>
+            </div>
+            <div class="preview-card">
+              <strong>Risk Profile</strong>
+              <p>Ready / Waiting symbol status</p>
+            </div>
+            <div class="preview-card">
+              <strong>Report</strong>
+              <p>CSV export and realized gain/loss</p>
+            </div>
+            <div class="preview-table">
+              <div><b>Symbol</b><b>Status</b><b>P/L</b></div>
+              <div><span>AAPL</span><span>Ready</span><span class="gain">$11.70</span></div>
+              <div><span>NVDA</span><span>Waiting</span><span>N/A</span></div>
+              <div><span>MSFT</span><span>Ready</span><span class="gain">$42.15</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="access" class="section access-section">
+        <div>
+          <p class="eyebrow">Selective access</p>
+          <h2>Public overview, private implementation.</h2>
+          <p>
+            This homepage is designed for public review. Source-code access can be shared
+            selectively through the private TradeNerva internal repository.
+          </p>
+        </div>
+        <a class="button primary" href="mailto:mmnur@example.com?subject=TradeNerva%20Access%20Request">Request private access</a>
+      </section>
+    </main>
+
+    <footer>
+      <span>TradeNerva</span>
+      <span>Autonomous trading supervision, built with explicit safety controls.</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
