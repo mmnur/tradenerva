@@ -47,6 +47,7 @@ assert.ok(
 );
 assert.ok(readme.includes('| Capability | What It Does |'), 'Expected README capability table');
 assert.ok(readme.includes('The implementation lives in a private internal repository'), 'Expected private access note');
+assert.ok(readme.indexOf('https://mmnur.github.io/tradenerva/') < readme.indexOf('## What It Showcases'), 'Expected homepage link before README details');
 assert.ok(html.includes('<canvas id="market-canvas"'), 'Expected animated market canvas');
 assert.ok(html.includes('href="#capabilities"'), 'Expected capabilities nav link');
 assert.ok(html.includes('href="#screens"'), 'Expected product nav link');
