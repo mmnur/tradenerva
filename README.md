@@ -25,5 +25,4 @@ This public repository is a showcase for TradeNerva. The implementation lives in
 
 ```bash
 open index.html
-node tests/homepage.test.mjs
 ```
