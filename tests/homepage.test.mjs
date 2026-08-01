@@ -6,9 +6,11 @@ import { fileURLToPath } from 'node:url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = resolve(__dirname, '..');
 const html = readFileSync(resolve(root, 'index.html'), 'utf8');
+const readme = readFileSync(resolve(root, 'README.md'), 'utf8');
 const css = readFileSync(resolve(root, 'styles.css'), 'utf8');
 const js = readFileSync(resolve(root, 'script.js'), 'utf8');
 const normalizedHtml = html.replace(/\s+/g, ' ');
+const normalizedReadme = readme.replace(/\s+/g, ' ');
 
 for (const text of [
   'TradeNerva',
@@ -20,12 +22,19 @@ for (const text of [
   'Request private access',
 ]) {
   assert.ok(html.includes(text), `Expected homepage to include "${text}"`);
+  assert.ok(readme.includes(text), `Expected README to include "${text}"`);
 }
 
 assert.ok(
   normalizedHtml.includes('An AI-powered autonomous trading platform for short-term strategies, built around disciplined risk controls and automated order execution to maximize your gain.'),
   'Expected exact hero positioning statement',
 );
+assert.ok(
+  normalizedReadme.includes('An AI-powered autonomous trading platform for short-term strategies, built around disciplined risk controls and automated order execution to maximize your gain.'),
+  'Expected exact README positioning statement',
+);
+assert.ok(readme.includes('| Capability | What It Does |'), 'Expected README capability table');
+assert.ok(readme.includes('The implementation lives in a private internal repository'), 'Expected private access note');
 assert.ok(html.includes('<canvas id="market-canvas"'), 'Expected animated market canvas');
 assert.ok(html.includes('href="#capabilities"'), 'Expected capabilities nav link');
 assert.ok(html.includes('href="#screens"'), 'Expected product nav link');
