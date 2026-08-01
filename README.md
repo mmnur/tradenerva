@@ -6,6 +6,12 @@ An AI-powered autonomous trading platform for short-term strategies, built aroun
 
 [Request private access](mailto:mmnur@example.com?subject=TradeNerva%20Access%20Request)
 
+## Public Homepage
+
+View the full visual homepage:
+
+[https://mmnur.github.io/tradenerva/](https://mmnur.github.io/tradenerva/)
+
 ## Built For Controlled Autonomy
 
 TradeNerva is designed for daily and short-term stock trading workflows where the system can analyze, decide, and execute within explicit safety boundaries.
@@ -49,7 +55,7 @@ This public repository is a showcase for TradeNerva. The implementation lives in
 
 ## Local Static Preview
 
-This repo also includes a static `index.html` version of the showcase page.
+This repo also includes the static `index.html` source for the GitHub Pages showcase.
 
 ```bash
 open index.html

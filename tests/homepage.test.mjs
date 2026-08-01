@@ -20,9 +20,21 @@ for (const text of [
   'Risk Profile',
   'Trade Performance',
   'Request private access',
+  'https://mmnur.github.io/tradenerva/',
+]) {
+  assert.ok(readme.includes(text), `Expected README to include "${text}"`);
+}
+
+for (const text of [
+  'TradeNerva',
+  'Safety-first autonomous trading',
+  'Risk Gates',
+  'My Stocks',
+  'Risk Profile',
+  'Trade Performance',
+  'Request private access',
 ]) {
   assert.ok(html.includes(text), `Expected homepage to include "${text}"`);
-  assert.ok(readme.includes(text), `Expected README to include "${text}"`);
 }
 
 assert.ok(
