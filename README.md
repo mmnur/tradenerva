@@ -19,7 +19,7 @@ An AI-powered autonomous trading platform for short-term strategies, built aroun
 
 This public repository is a showcase for TradeNerva. The implementation lives in a private internal repository, and source-code access can be shared selectively for review.
 
-[Request private access](mailto:mmnur@example.com?subject=TradeNerva%20Access%20Request)
+[Request private access](mailto:mmnur@msn.com?subject=TradeNerva%20Access%20Request)
 
 ## Local Preview
 
